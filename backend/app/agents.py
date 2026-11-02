@@ -47,9 +47,6 @@ def log_event(stage: str, message: str, status: str = "success") -> dict:
     }
 
 
-# --------------------------------------------------
-# 1. REQUEST UNDERSTANDING AGENT
-# --------------------------------------------------
 
 def request_understanding_agent(state: dict) -> dict:
 
@@ -94,10 +91,6 @@ def request_understanding_agent(state: dict) -> dict:
     }
 
 
-# --------------------------------------------------
-# 2. PLANNING AGENT
-# --------------------------------------------------
-
 def planning_agent(state: dict) -> dict:
 
     return {
@@ -110,11 +103,6 @@ def planning_agent(state: dict) -> dict:
             )
         ],
     }
-
-
-# --------------------------------------------------
-# 3. SUPERVISOR AGENT
-# --------------------------------------------------
 
 def supervisor_agent(state: dict) -> dict:
 
@@ -276,9 +264,7 @@ def supervisor_agent(state: dict) -> dict:
     }
 
 
-# --------------------------------------------------
-# 4. EXTRACTION AGENT
-# --------------------------------------------------
+
 
 def extraction_agent(state: dict) -> dict:
 
@@ -314,10 +300,6 @@ def extraction_agent(state: dict) -> dict:
         }
 
 
-# --------------------------------------------------
-# 5. PROFILING AGENT
-# --------------------------------------------------
-
 def profiling_agent(state: dict) -> dict:
 
     try:
@@ -344,10 +326,6 @@ def profiling_agent(state: dict) -> dict:
             ],
         }
 
-
-# --------------------------------------------------
-# 6. TRANSFORMATION AGENT
-# --------------------------------------------------
 
 def transformation_agent(state: dict) -> dict:
 
@@ -442,10 +420,6 @@ def transformation_agent(state: dict) -> dict:
         }
 
 
-# --------------------------------------------------
-# 7. VALIDATION AGENT
-# --------------------------------------------------
-
 def validation_agent(state: dict) -> dict:
 
     try:
@@ -475,10 +449,6 @@ def validation_agent(state: dict) -> dict:
             ],
         }
 
-
-# --------------------------------------------------
-# 8. LOADING AGENT
-# --------------------------------------------------
 
 def loading_agent(state: dict) -> dict:
 
@@ -511,11 +481,7 @@ def loading_agent(state: dict) -> dict:
             ],
         }
 
-
-# --------------------------------------------------
-# 9. ERROR DIAGNOSIS AGENT
-# --------------------------------------------------
-
+# error_diagnosis_agent
 def diagnosis_agent(state: dict) -> dict:
 
     diagnosis = llm.invoke(
@@ -559,10 +525,6 @@ def diagnosis_agent(state: dict) -> dict:
         ],
     }
 
-
-# --------------------------------------------------
-# 10. REPORTING AGENT
-# --------------------------------------------------
 
 def reporting_agent(state: dict) -> dict:
 

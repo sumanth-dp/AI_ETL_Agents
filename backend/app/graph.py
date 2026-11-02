@@ -17,10 +17,6 @@ from backend.app.agents import (
 )
 
 
-# --------------------------------------------------
-# HUMAN INPUT NODE
-# --------------------------------------------------
-
 def ask_user_agent(state: ETLState) -> dict:
 
     question = (
@@ -41,10 +37,6 @@ def ask_user_agent(state: ETLState) -> dict:
         ],
     }
 
-
-# --------------------------------------------------
-# ROUTING FUNCTION
-# --------------------------------------------------
 
 def route_supervisor(
     state: ETLState,
@@ -81,10 +73,6 @@ def route_supervisor(
 
     return action
 
-
-# --------------------------------------------------
-# BUILD GRAPH
-# --------------------------------------------------
 
 def build_etl_graph():
 
