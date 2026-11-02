@@ -1,0 +1,7 @@
+customer_id,name,email,age,city
+1,Sumanth,sumanth@example.com,23,Hyderabad
+2,Rahul,rahul@example.com,,Warangal
+3,Pranith,pranith@example.com,25,Hyderabad
+3,Pranith,pranith@example.com,25,Hyderabad
+4,Arjun,,28,Karimnagar
+5, Sneha ,sneha@example.com,24,Warangal

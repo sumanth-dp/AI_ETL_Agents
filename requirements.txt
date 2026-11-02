@@ -1,0 +1,10 @@
+pydantic
+langchain
+langchain-google-genai
+langgraph
+dotenv
+pandas
+python-dotenv
+langchain-ollama
+langchain-groq
+langsmith
